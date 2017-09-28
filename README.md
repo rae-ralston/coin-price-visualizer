@@ -1,5 +1,7 @@
 # Lunyr Interview: Study App
 
+used create-react-app to scaffold setup
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
