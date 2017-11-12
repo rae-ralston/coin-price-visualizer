@@ -1,1 +1,1 @@
-export const UPDATE_PRICES = "UPDATE PRICES";
+export const UPDATE_PRICES = "UPDATE PRICES"
