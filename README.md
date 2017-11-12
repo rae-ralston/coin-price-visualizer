@@ -1,8 +1,12 @@
-# Lunyr Interview: Study App
+# Coin Price Visualizer
 
-used create-react-app to scaffold setup
 
-### `npm start`
+## run
+clone repo
+`npm install`
+`npm start`: Runs the app in the development mode on port 3000
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## resources
+- [medium: redux websocket integration](https://medium.com/@ianovenden/redux-websocket-integration-c1a0d22d3189)
+- [github: redux websocket example](https://github.com/maxnachlinger/redux-websocket-example)

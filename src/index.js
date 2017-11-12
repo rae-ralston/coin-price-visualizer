@@ -16,10 +16,10 @@ const store = createStore(
   reducer,
   applyMiddleware(loggerMiddleware)
 )
-
+console.log(store.getState())
 render(
   <Provider store={store}>
-    <App data={'hi'}/>
+    <App data={'you are gorgeous'}/>
   </Provider>,
   document.getElementById('root')
 )

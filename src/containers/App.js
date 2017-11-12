@@ -7,9 +7,6 @@ import { UPDATE_PRICES } from '../constants';
 // API for Current Price in USD: https://min-api.cryptocompare.com/data/price?fsym=LUN&tsyms=USD')
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-  }
 
   componentDidMount() {
     let closingPrices
@@ -30,9 +27,11 @@ class App extends Component {
   }
 
   render() {
+    console.log('***', this.context)
+
     return (
       <div className="App">
-        hai
+        hai {this.props.data}
       </div>
     );
   }

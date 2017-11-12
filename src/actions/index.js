@@ -1,5 +1,4 @@
-
-import { UPDATE_PRICES } from '../constants';
+const UPDATE_PRICES = "UPDATE PRICES"
 
 export const updatePrices = (payload) => ({
   type: UPDATE_PRICES,
