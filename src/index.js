@@ -2,11 +2,13 @@ import React from 'react';
 import { render } from 'react-dom';
 import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
-import './index.css';
 import App from './containers/App';
 import reducer from './reducers'
 import registerServiceWorker from './registerServiceWorker';
 import { updatePrices } from './actions/index'
+import { fetchPrices } from './helperFunctions'
+
+import './index.css';
 
 fetchPrices().then(prices => {
   store.dispatch(updatePrices(prices));
