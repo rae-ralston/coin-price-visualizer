@@ -6,6 +6,11 @@ import './index.css';
 import App from './containers/App';
 import reducer from './reducers'
 import registerServiceWorker from './registerServiceWorker';
+import { updatePrices } from './actions/index'
+
+fetchPrices().then(prices => {
+  store.dispatch(updatePrices(prices));
+});
 
 const loggerMiddleware = store => next => action => {
   console.log('dispatching: ', action);
@@ -19,7 +24,7 @@ const store = createStore(
 console.log(store.getState())
 render(
   <Provider store={store}>
-    <App data={'you are gorgeous'}/>
+    <App />
   </Provider>,
   document.getElementById('root')
 )
